@@ -86,6 +86,7 @@
             color: $black
             &::after
                 border-color: $black
+    &__btn-3
 
 //-------------------------------------------------------------//
 //-------------------------------------------------------------//
@@ -136,8 +137,6 @@
     // .diversity__row
     &__row
         margin-bottom: 100px
-    // .diversity__text
-    &__text
 
     // .diversity__title
     &__title
@@ -156,9 +155,6 @@
     // .diversity__description
     &__description
         column-gap: 54px
-
-    // .diversity__description-img
-    &__description-img
 
     // .diversity__description-text
     &__description-text
@@ -242,3 +238,297 @@
         margin: 0 auto
 //---------------------------------------------------------//
 //---------------------------------------------------------//
+.durability
+    margin-bottom: 50px
+    // .durability__title
+    &__title
+        //styleName: H1;
+        font-family: Cormorant Garamond
+        font-size: 4.8rem
+        font-weight: 500
+        line-height: 5.3rem
+        letter-spacing: 0.03em
+
+        max-height: 53px
+        max-width: 1170px
+        overflow: hidden
+
+        margin-bottom: 25px
+
+    // .durability__description
+    &__description
+        //styleName: uh;
+        font-size: 2rem
+        line-height: 3.2rem
+
+        max-height: 53px
+        max-width: 1170px
+        overflow: hidden
+
+        color: $gray
+
+        margin-bottom: 60px
+
+    // .durability__column-img
+    &__column-img
+        &:first-of-type
+            position: relative
+        &:last-of-type
+            position: absolute
+            bottom: -100px
+            right: -30px
+
+    // .durability__text-title
+    &__text-title
+        font-size: 2rem
+        line-height: 3.2rem
+
+        max-width: 570px
+        max-height: 70px
+        overflow: hidden
+
+        margin-bottom: 15px
+        position: relative
+        &::before
+            content: ''
+            border-top: 2px solid $link
+            width: 77px
+            position: absolute
+            top: 0
+            left: 0
+    // .durability__text-description
+    &__text-description
+        font-size: 1.6rem
+        line-height: 2.2rem
+
+        color: $gray
+        max-height: 70px
+        max-width: 570px
+        overflow: hidden
+
+        margin-bottom: 60px
+
+//------------------------dealers------------------------//
+//------------------------dealers------------------------//
+.dealers
+    background-color: $dealers
+    padding-top: 90px
+    padding-bottom: 82px
+    margin-bottom: 100px
+    // .dealers__title
+    &__title
+        //styleName: H1;
+        font-family: Cormorant Garamond
+        font-size: 4.8rem
+        font-weight: 500
+        line-height: 5.3rem
+        letter-spacing: 0.03em
+
+        text-align: center
+        max-height: 106px
+        max-width: 1170px
+        overflow: hidden
+
+        margin-bottom: 20px
+
+    // .dealers__description
+    &__description
+        font-size: 2rem
+        line-height: 3.2rem
+
+        text-align: center
+        max-height: 32px
+        max-width: 1170px
+        overflow: hidden
+
+        margin-bottom: 40px
+
+    // .dealers__row
+    &__row
+        column-gap: 60px
+    // .dealers__link
+    &__link
+        column-gap: 57px
+        border: 1px solid rgba(183, 119, 190, 0.6)
+    // .dealers__link1
+    &__link1
+        padding: 50px 93px
+
+    // .dealers__link-description
+    &__link-description
+        //styleName: uh;
+        font-size: 2rem
+        line-height: 3.2rem
+
+        color: $black
+
+        max-height: 64px
+        max-width: 249px
+        overflow: hidden
+
+    // .dealers__link2
+    &__link2
+        padding: 39px 93px
+
+//---------------------unique-----------------------//
+//---------------------unique-----------------------//
+.unique
+    margin-bottom: 160px
+
+    // .unique__title
+    &__title
+        //styleName: H1;
+        font-family: Cormorant Garamond
+        font-size: 4.8rem
+        font-weight: 500
+        line-height: 5.3rem
+        letter-spacing: 0.03em
+
+        text-align: center
+        max-height: 106px
+        max-width: 845px
+
+        overflow: hidden
+
+        margin: 0 auto 20px
+
+    // .unique__title-2
+    &__title-2
+        margin: 0 0 80px 0
+        max-width: 925px
+
+    // .unique__description
+    &__description
+        //styleName: uh;
+        font-size: 2rem
+        line-height: 3.2rem
+        text-align: center
+
+        color: $gray
+        max-height: 32px
+        max-width: 700px
+        overflow: hidden
+
+        margin: 0 auto 40px
+
+    // .unique__video
+    &__video
+        display: block
+        margin: 0 auto 200px
+    // .unique__row
+    &__row
+        margin-bottom: 230px
+
+    // .unique__text-description
+    &__text-description
+        font-size: 2rem
+        line-height: 2.8rem
+        letter-spacing: 0.05em
+
+        max-height: 84px
+        max-width: 549px
+        overflow: hidden
+
+        margin-bottom: 40px
+
+    // .unique__card-text
+    &__card-text
+        position: relative
+        padding-left: 10px
+        &::before
+            content: ''
+            border-left: 2px solid $link
+            height: 50px
+            position: absolute
+            top: 0
+            left: 0
+    // .unique__card-title
+    &__card-title
+        //styleName: txt;;
+        font-size: 1.6rem
+        line-height: 2.2rem
+
+        max-height: 22px
+        max-width: 168px
+        overflow: hidden
+
+        margin-bottom: 12px
+
+    // .unique__card-description
+    &__card-description
+        font-size: 1.2rem
+        line-height: 1.4rem
+
+        color: $gray
+
+        max-height: 14px
+        max-width: 124px
+        overflow: hidden
+    &__manyVideo
+        position: relative
+
+.slick-next
+    top: -10%!important
+    left: 15%!important
+.slick-prev
+    top: -10%!important
+    left: 30px!important
+.counter
+    font-size: 2rem
+    font-weight: 700
+    line-height: 1.6rem
+    color: $link
+
+    position: absolute
+    top: 100px
+    left: 7.5%
+
+//---------------location----------------------//
+//---------------location----------------------//
+.location
+    margin-bottom: 115px
+
+    // .location__address
+    &__address
+        background-color: $black
+        padding: 50px 30px 0 30px
+
+    // .location__address-title
+    &__address-title
+        font-family: Cormorant Garamond
+        font-size: 3.2rem
+        font-weight: 500
+        line-height: 3.8rem
+        letter-spacing: 0.05em
+
+        color: $white
+
+        max-height: 38px
+        max-width: 300px
+        overflow: hidden
+
+        margin-bottom: 37px
+
+    // .location__address-img
+    &__address-img
+        margin-right: 15px
+
+    // .location__address-description
+    &__address-description
+        font-size: 1.6rem
+        line-height: 2.2rem
+
+        color: $white
+
+    // .location__address-description
+    &__address-description-2
+        max-width: 373px
+        margin-bottom: 10px
+
+    // .location__address-link
+    &__address-link
+        font-size: 1.6rem
+        line-height: 2.2rem
+
+        color: $link
+        padding-left: 33px

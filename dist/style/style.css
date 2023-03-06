@@ -48,6 +48,10 @@ body {
   margin-bottom: 30px;
 }
 
+.block {
+  display: block;
+}
+
 .container {
   max-width: 1200px;
 }
@@ -215,7 +219,6 @@ p, h1, h2, h3, h4, h5, h6 {
 .banner__btn-2 a::after {
   border-color: #000000;
 }
-
 .trend {
   margin-bottom: 80px;
 }
@@ -358,6 +361,252 @@ p, h1, h2, h3, h4, h5, h6 {
   max-width: 81px;
   overflow: hidden;
   margin: 0 auto;
+}
+
+.durability {
+  margin-bottom: 50px;
+}
+.durability__title {
+  font-family: Cormorant Garamond;
+  font-size: 4.8rem;
+  font-weight: 500;
+  line-height: 5.3rem;
+  letter-spacing: 0.03em;
+  max-height: 53px;
+  max-width: 1170px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+.durability__description {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  max-height: 53px;
+  max-width: 1170px;
+  overflow: hidden;
+  color: #6A6A6A;
+  margin-bottom: 60px;
+}
+.durability__column-img:first-of-type {
+  position: relative;
+}
+.durability__column-img:last-of-type {
+  position: absolute;
+  bottom: -100px;
+  right: -30px;
+}
+.durability__text-title {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  max-width: 570px;
+  max-height: 70px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  position: relative;
+}
+.durability__text-title::before {
+  content: "";
+  border-top: 2px solid #B777BE;
+  width: 77px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.durability__text-description {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #6A6A6A;
+  max-height: 70px;
+  max-width: 570px;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+.dealers {
+  background-color: #F3F3F6;
+  padding-top: 90px;
+  padding-bottom: 82px;
+  margin-bottom: 100px;
+}
+.dealers__title {
+  font-family: Cormorant Garamond;
+  font-size: 4.8rem;
+  font-weight: 500;
+  line-height: 5.3rem;
+  letter-spacing: 0.03em;
+  text-align: center;
+  max-height: 106px;
+  max-width: 1170px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.dealers__description {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  text-align: center;
+  max-height: 32px;
+  max-width: 1170px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.dealers__row {
+  -webkit-column-gap: 60px;
+     -moz-column-gap: 60px;
+          column-gap: 60px;
+}
+.dealers__link {
+  -webkit-column-gap: 57px;
+     -moz-column-gap: 57px;
+          column-gap: 57px;
+  border: 1px solid rgba(183, 119, 190, 0.6);
+}
+.dealers__link1 {
+  padding: 50px 93px;
+}
+.dealers__link-description {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  color: #000000;
+  max-height: 64px;
+  max-width: 249px;
+  overflow: hidden;
+}
+.dealers__link2 {
+  padding: 39px 93px;
+}
+
+.unique {
+  margin-bottom: 160px;
+}
+.unique__title {
+  font-family: Cormorant Garamond;
+  font-size: 4.8rem;
+  font-weight: 500;
+  line-height: 5.3rem;
+  letter-spacing: 0.03em;
+  text-align: center;
+  max-height: 106px;
+  max-width: 845px;
+  overflow: hidden;
+  margin: 0 auto 20px;
+}
+.unique__title-2 {
+  margin: 0 0 80px 0;
+  max-width: 925px;
+}
+.unique__description {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  text-align: center;
+  color: #6A6A6A;
+  max-height: 32px;
+  max-width: 700px;
+  overflow: hidden;
+  margin: 0 auto 40px;
+}
+.unique__video {
+  display: block;
+  margin: 0 auto 200px;
+}
+.unique__row {
+  margin-bottom: 230px;
+}
+.unique__text-description {
+  font-size: 2rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.05em;
+  max-height: 84px;
+  max-width: 549px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.unique__card-text {
+  position: relative;
+  padding-left: 10px;
+}
+.unique__card-text::before {
+  content: "";
+  border-left: 2px solid #B777BE;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.unique__card-title {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  max-height: 22px;
+  max-width: 168px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+.unique__card-description {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: #6A6A6A;
+  max-height: 14px;
+  max-width: 124px;
+  overflow: hidden;
+}
+.unique__manyVideo {
+  position: relative;
+}
+
+.slick-next {
+  top: -10% !important;
+  left: 15% !important;
+}
+
+.slick-prev {
+  top: -10% !important;
+  left: 30px !important;
+}
+
+.counter {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.6rem;
+  color: #B777BE;
+  position: absolute;
+  top: 100px;
+  left: 7.5%;
+}
+
+.location {
+  margin-bottom: 115px;
+}
+.location__address {
+  background-color: #000000;
+  padding: 50px 30px 0 30px;
+}
+.location__address-title {
+  font-family: Cormorant Garamond;
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 3.8rem;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  max-height: 38px;
+  max-width: 300px;
+  overflow: hidden;
+  margin-bottom: 37px;
+}
+.location__address-img {
+  margin-right: 15px;
+}
+.location__address-description {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #FFFFFF;
+}
+.location__address-description-2 {
+  max-width: 373px;
+  margin-bottom: 10px;
+}
+.location__address-link {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #B777BE;
+  padding-left: 33px;
 }
 
 /* Slider */
