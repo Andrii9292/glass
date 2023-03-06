@@ -26,4 +26,21 @@ $(document).ready(function () {
     });
 });
 
+//---------------------------------------------------------------//
+const cityLink = document.getElementById("city-link");
+const cityName = document.getElementById("city-name");
 
+// Функция для изменения названия города
+function changeCity(city) {
+    cityName.textContent = city;
+}
+
+// Обработчик клика по ссылке на город
+cityLink.addEventListener("click", function (event) {
+    event.preventDefault(); // Отменяем стандартное действие ссылки
+    const newCity = prompt("Введите новый город"); // Запрашиваем у пользователя новый город
+    if (newCity) { // Если пользователь ввел название города, то меняем его в баннере
+        changeCity(newCity);
+        cityLink.href = `/${newCity}`; // Изменяем ссылку на город, например: "/Москва"
+    }
+});

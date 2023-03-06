@@ -84,9 +84,13 @@
             background: $white
             border: 1px solid rgba(183, 119, 190, 0.6)
             color: $black
+            transition: all 0.3s linear
             &::after
                 border-color: $black
-    &__btn-3
+            &:hover
+                background: rgba(183, 119, 190, 0.1)
+                border: 1px solid rgba(183, 119, 190, 0.6)
+                transition: all 0.3s linear
 
 //-------------------------------------------------------------//
 //-------------------------------------------------------------//
@@ -183,10 +187,14 @@
         padding: 30px 0 15px 0
         flex: 1 0 20%
         max-width: 25%
+        a
+            &:hover
+                text-decoration: none
     // .diversity__card-image
     &__card-image
         max-height: 161px
         max-width: 156px
+        overflow: hidden
         margin: 0 auto 31px
         img
             width: 100%
@@ -205,6 +213,7 @@
         line-height: 1.6rem
 
         text-align: center
+        color: $black
         max-height: 16px
         max-width: 203px
         overflow: hidden
@@ -350,6 +359,13 @@
     &__link
         column-gap: 57px
         border: 1px solid rgba(183, 119, 190, 0.6)
+        transition: all 0.3s linear
+
+        &:hover
+            background: rgba(183, 119, 190, 0.1)
+            border: 1px solid #B777BE
+            text-decoration: none
+            transition: all 0.3s linear
     // .dealers__link1
     &__link1
         padding: 50px 93px
@@ -365,7 +381,6 @@
         max-height: 64px
         max-width: 249px
         overflow: hidden
-
     // .dealers__link2
     &__link2
         padding: 39px 93px
