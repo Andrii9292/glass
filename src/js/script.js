@@ -6,7 +6,8 @@ thumbnails.forEach(thumbnail => {
         preview.src = thumbnail.src;
     });
 });
-//--------------------слайдер-------------------//
+
+//--------------------слайдер+счетчик который посчитывает какой слайд включен и общще количество(4/12напр.)-------------------//
 $(document).ready(function () {
     var $slider = $('.unique__card-wrapper');
     var $counter = $('.counter');
@@ -26,7 +27,7 @@ $(document).ready(function () {
     });
 });
 
-//---------------------------------------------------------------//
+//-----------------------------для изменения названия города в шапке----------------------------------//
 const cityLink = document.getElementById("city-link");
 const cityName = document.getElementById("city-name");
 
@@ -43,4 +44,49 @@ cityLink.addEventListener("click", function (event) {
         changeCity(newCity);
         cityLink.href = `/${newCity}`; // Изменяем ссылку на город, например: "/Москва"
     }
+});
+
+//-----скрываем подменю если курсор не на нем и даем пол секунды чтобы перевести курсор на подменю------------------------------------------------------------------//
+const headerList1 = document.querySelector('.header__list-1');
+const submenu = headerList1.querySelector('.submenu');
+
+let timerId;
+
+function showSubmenu() {
+    clearTimeout(timerId);
+    submenu.style.display = 'block';
+}
+
+function hideSubmenu() {
+    timerId = setTimeout(() => {
+        submenu.style.display = 'none';
+    }, 500);
+}
+
+headerList1.addEventListener('mouseenter', showSubmenu);
+headerList1.addEventListener('mouseleave', hideSubmenu);
+submenu.addEventListener('mouseenter', () => {
+    clearTimeout(timerId);
+});
+submenu.addEventListener('mouseleave', hideSubmenu);
+
+//-----------------баннер обратный звонок-----------------------------------//
+const callLink = document.querySelector('.call-link');
+const callContainer = document.querySelector('.call-container');
+const callClose = document.querySelector('.call-close');
+const overlay = document.querySelector('.overlay');
+
+callLink.addEventListener('click', () => {
+    callContainer.style.display = 'block';
+    overlay.style.display = 'block';
+});
+
+callClose.addEventListener('click', () => {
+    callContainer.style.display = 'none';
+    overlay.style.display = 'none';
+});
+
+overlay.addEventListener('click', () => {
+    callContainer.style.display = 'none';
+    overlay.style.display = 'none';
 });

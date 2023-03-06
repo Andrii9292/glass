@@ -39,7 +39,6 @@ body {
   font-weight: 400;
 }
 
-/*Пример picture*/
 .none {
   display: none;
 }
@@ -50,6 +49,21 @@ body {
 
 .block {
   display: block;
+}
+
+.td-hover {
+  text-decoration: none;
+}
+.td-hover:hover {
+  text-decoration: none;
+}
+
+.td {
+  text-decoration: none;
+}
+
+.c-black-hover:hover {
+  color: #000;
 }
 
 .container {
@@ -111,10 +125,19 @@ p, h1, h2, h3, h4, h5, h6 {
   text-align: right;
   color: #B777BE;
 }
+.header__number-text:hover {
+  text-decoration: none;
+}
 .header__social {
   -webkit-column-gap: 13px;
      -moz-column-gap: 13px;
           column-gap: 13px;
+}
+.header__social-1 {
+  margin: 0 auto 100px;
+  -webkit-column-gap: 70px;
+     -moz-column-gap: 70px;
+          column-gap: 70px;
 }
 .header__list a {
   font-size: 1.3rem;
@@ -146,20 +169,245 @@ p, h1, h2, h3, h4, h5, h6 {
 .submenu {
   display: none;
   position: absolute;
-  top: 100%;
-  left: 0;
-  width: 200px;
+  top: 15%;
+  left: 3%;
+  width: 425px;
   background-color: #fff;
-  border: 1px solid #ccc;
-  padding: 10px;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  z-index: 1;
+  -webkit-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 .submenu li {
   display: block;
-  margin: 10px 0;
+  margin: 20px 0;
+}
+.submenu li a {
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #000000;
+  max-height: 252px;
+  max-width: 296px;
+  overflow: hidden;
 }
 
-.header__list-1:hover .submenu {
-  display: block !important;
+.call-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.call-close {
+  position: absolute;
+  top: -20px;
+  right: -35px;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  background-color: transparent;
+}
+.call-close:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.call-modal {
+  background-color: #fff;
+  padding: 20px 20px 50px;
+}
+.call-modal__title {
+  font-family: Cormorant Garamond;
+  font-size: 3.6rem;
+  font-weight: 500;
+  line-height: 4rem;
+  letter-spacing: 0.03em;
+  max-height: 40px;
+  max-width: 365px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.call-modal__description {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  color: #6A6A6A;
+  max-height: 64px;
+  max-width: 331px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.call-modal__name {
+  border: 1px solid #F5F5F5;
+  padding: 15px 39px 17px 15px;
+  width: 100%;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #6A6A6A;
+  background: #F5F5F5;
+}
+.call-modal__name::-webkit-input-placeholder {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #6A6A6A;
+}
+.call-modal__name::-moz-placeholder {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #6A6A6A;
+}
+.call-modal__name:-ms-input-placeholder {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #6A6A6A;
+}
+.call-modal__name::-ms-input-placeholder {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #6A6A6A;
+}
+.call-modal__name::placeholder {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #6A6A6A;
+}
+.call-modal__tel {
+  border: 1px solid #F5F5F5;
+  padding: 15px 39px 17px 15px;
+  width: 100%;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #6A6A6A;
+  background: #F5F5F5;
+}
+.call-modal__tel::-webkit-input-placeholder {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #6A6A6A;
+}
+.call-modal__tel::-moz-placeholder {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #6A6A6A;
+}
+.call-modal__tel:-ms-input-placeholder {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #6A6A6A;
+}
+.call-modal__tel::-ms-input-placeholder {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #6A6A6A;
+}
+.call-modal__tel::placeholder {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #6A6A6A;
+}
+.call-modal__text {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  max-height: 44px;
+  max-width: 365px;
+  overflow: hidden;
+}
+.call-modal__link {
+  padding: 20px 30px;
+  border: 1px solid rgba(183, 119, 190, 0.6);
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.6rem;
+  letter-spacing: 0.2em;
+  color: #000000;
+  max-height: 16px;
+  max-width: 263px;
+  overflow: hidden;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.call-modal__link:hover {
+  background: rgba(183, 119, 190, 0.1);
+  border: 1px solid #B777BE;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.close-btn {
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+.close-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.close-line {
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background-color: black;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.close-line:first-child {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.close-line:last-child {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.close-btn:hover:first-child {
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+  top: 50%;
+}
+
+.close-btn:hover:last-child {
+  -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  bottom: 50%;
 }
 
 .banner {

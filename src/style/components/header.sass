@@ -35,8 +35,13 @@
         line-height: 1.5rem
         text-align: right
         color: $link
+        &:hover
+            text-decoration: none
     &__social
         column-gap: 13px
+    &__social-1
+        margin: 0 auto 100px
+        column-gap: 70px
     &__list
         a
             font-size: 1.3rem
@@ -57,15 +62,179 @@
 .submenu
     display: none
     position: absolute
-    top: 100%
-    left: 0
-    width: 200px
+    top: 15%
+    left: 3%
+    width: 425px
     background-color: #fff
-    border: 1px solid #ccc
-    padding: 10px
+    border: 2px solid #fff
+    padding: 10px 20px
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2)
+    border-radius: 4px
+    z-index: 1
+    transition: all 0.5s linear
 
     & li
         display: block
-        margin: 10px 0
-.header__list-1:hover .submenu
-    display: block!important
+        margin: 20px 0
+        a
+            font-size: 1.6rem
+            line-height: 1.9rem
+            color: $black
+
+            max-height: 252px
+            max-width: 296px
+            overflow: hidden
+
+.call-container
+    display: none
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 2
+
+.overlay
+    display: none
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.5)
+    z-index: 1
+
+.call-close
+    position: absolute
+    top: -20px
+    right: -35px
+    transition: all 0.3s linear
+    background-color: transparent
+    &:hover
+        transform: scale(1.2)
+        transition: all 0.3s linear
+.call-modal
+    background-color: #fff
+    padding: 20px 20px 50px
+    // .call-modal__img
+    &__img
+
+    // .call-modal__wrapper
+    &__wrapper
+
+    // .call-modal__title
+    &__title
+        font-family: Cormorant Garamond
+        font-size: 3.6rem
+        font-weight: 500
+        line-height: 4rem
+        letter-spacing: 0.03em
+
+        max-height: 40px
+        max-width: 365px
+        overflow: hidden
+
+        margin-bottom: 20px
+
+    // .call-modal__description
+    &__description
+        font-size: 2rem
+        line-height: 3.2rem
+        color: $gray
+
+        max-height: 64px
+        max-width: 331px
+        overflow: hidden
+
+        margin-bottom: 40px
+
+    // .call-modal__name
+    &__name
+        border: 1px solid #F5F5F5
+        padding: 15px 39px 17px 15px
+        width: 100%
+        font-size: 1.6rem
+        line-height: 2.2rem
+        color: #6A6A6A
+        background: #F5F5F5
+        &::placeholder
+            font-size: 1.6rem
+            line-height: 2.2rem
+            color: #6A6A6A
+
+    // .call-modal__tel
+    &__tel
+        border: 1px solid #F5F5F5
+        padding: 15px 39px 17px 15px
+        width: 100%
+        font-size: 1.6rem
+        line-height: 2.2rem
+        color: #6A6A6A
+        background: #F5F5F5
+        &::placeholder
+            font-size: 1.6rem
+            line-height: 2.2rem
+            color: #6A6A6A
+
+    // .call-modal__text
+    &__text
+        font-size: 1.6rem
+        line-height: 2.2rem
+
+        max-height: 44px
+        max-width: 365px
+        overflow: hidden
+    &__link
+        padding: 20px 30px
+        border: 1px solid rgba(183, 119, 190, 0.6)
+
+        font-size: 1.2rem
+        font-weight: 700
+        line-height: 1.6rem
+        letter-spacing: 0.2em
+
+        color: $black
+
+        max-height: 16px
+        max-width: 263px
+        overflow: hidden
+        transition: all 0.3s linear
+        &:hover
+            background: rgba(183, 119, 190, 0.1)
+            border: 1px solid #B777BE
+            transition: all 0.3s linear
+.close-btn
+    width: 24px
+    height: 24px
+    position: relative
+
+.close-icon
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 16px
+    height: 16px
+    cursor: pointer
+
+.close-line
+    position: absolute
+    width: 16px
+    height: 2px
+    background-color: black
+    transition: all 0.2s ease-in-out
+
+    &:first-child
+        transform: rotate(45deg)
+
+    &:last-child
+        transform: rotate(-45deg)
+
+.close-btn:hover
+    &:first-child
+        transform: rotate(135deg)
+        top: 50%
+
+.close-btn:hover
+    &:last-child
+        transform: rotate(-135deg)
+        bottom: 50%
