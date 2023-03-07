@@ -47,6 +47,10 @@ body {
   margin-bottom: 30px;
 }
 
+.mb-100 {
+  margin-bottom: 100px;
+}
+
 .block {
   display: block;
 }
@@ -238,7 +242,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .call-modal {
   background-color: #fff;
-  padding: 20px 20px 50px;
+  padding: 20px 20px 50pxs;
 }
 .call-modal__title {
   font-family: Cormorant Garamond;
@@ -981,6 +985,108 @@ p, h1, h2, h3, h4, h5, h6 {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+}
+
+.banner-2 {
+  background-image: url("../images/banner-2.webp");
+}
+
+.banner__title-2 {
+  max-width: 950px;
+}
+.banner__description-2 {
+  max-width: 645px;
+  max-height: 115px;
+  margin: 0 auto 90px;
+}
+.banner__btn-3 a::after {
+  left: calc(85% - 4.95px - 5.05px);
+}
+.banner__btn-4 a::after {
+  left: calc(87% - 4.95px - 5.05px);
+}
+
+.trend__description-2 {
+  max-height: 130px;
+}
+.trend__preview-2 img {
+  height: 565px;
+}
+
+.purchase {
+  background: #F3F3F6;
+  padding: 80px 0 200px 0;
+}
+.purchase__description {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  max-height: 64px;
+  max-width: 703px;
+  overflow: hidden;
+}
+.purchase__img {
+  position: relative;
+}
+.purchase__img img {
+  position: absolute;
+  top: -7%;
+  left: -50%;
+  width: 130%;
+}
+
+.counter-2 {
+  top: 26%;
+  left: 15%;
+}
+
+.unique__manyVideo-2 {
+  margin-bottom: 120px;
+}
+
+.range__title {
+  font-family: Cormorant Garamond;
+  font-size: 4.8rem;
+  font-weight: 500;
+  line-height: 5.3rem;
+  letter-spacing: 0.03em;
+  max-height: 106px;
+  max-width: 1105px;
+  overflow: hidden;
+}
+.range__description {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  max-height: 96px;
+  max-width: 612px;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+.range__description-2 {
+  max-width: 650px;
+}
+.range__text {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  max-height: 66px;
+  max-width: 570px;
+  overflow: hidden;
+}
+.range__row {
+  margin-bottom: 120px;
+}
+
+.exclusive {
+  background: #F3F3F6;
+  padding-top: 80px;
+  margin-bottom: 140px;
+}
+.exclusive__img img {
+  width: 100%;
+}
+
+.banner__btn-3 {
+  width: 390px;
+  margin: 0;
 }
 
 /* Slider */
