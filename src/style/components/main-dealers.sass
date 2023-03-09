@@ -106,4 +106,222 @@
     &__btn-3
         width: 390px
         margin: 0
-//-------------------------//
+//-----------discounts--------------//
+.discounts
+    margin-bottom: 200px
+    // .discounts__title
+    &__title
+        @include title
+        max-height: 106px
+        max-width: 1170px
+        overflow: hidden
+    // .discounts__description
+    &__description
+        @include description
+        color: $gray
+        max-height: 32px
+        max-width: 636px
+        overflow: hidden
+        margin-bottom: 60px
+    // .discounts__row
+    &__row
+        column-gap: 75px
+    // .discounts__card
+    &__card
+        border: 1px solid #6A6A6A
+        flex: 1 1 20%
+        padding: 20px 0
+    // .discounts__card-text
+    &__card-text
+        font-size: 2rem
+        font-weight: 700
+        line-height: 2.4rem
+
+        text-align: center
+        max-height: 24px
+        max-width: 235px
+        overflow: hidden
+.color-link
+    color: $link
+//--------------package------------------//
+.package
+    &__title
+        @include title
+        max-height: 53px
+        max-width: 650px
+        overflow: hidden
+        margin: 0 auto 30px
+    &__description
+        @include description
+        color: $gray
+
+        max-height: 32px
+        max-width: 1014px
+        overflow: hidden
+
+        margin: 0 auto 80px
+    &__row
+        &--1
+            margin-bottom: 140px
+        &--2
+            margin-bottom: 140px
+    &__img
+        position: static!important
+    &__text-title
+        max-height: 100px
+//--------------free-download------------------//
+.free-download
+    margin-bottom: 160px
+    // .free-download__title
+    &__title
+        @include title
+        max-height: 106px
+        max-width: 455px
+        overflow: hidden
+    // .free-download__description
+    &__description
+        @include description
+        max-height: 64px
+        max-width: 470px
+        overflow: hidden
+    // .free-download__text
+    &__text
+        @include text
+        max-height: 162px
+        max-width: 470px
+        overflow: hidden
+    // .free-download__right
+    &__right
+        position: relative
+    // .free-download__image
+    &__image
+        width: 100%
+        &:last-of-type
+            width: 50%
+            position: absolute
+            bottom: -10%
+            left: -20%
+.sale
+    padding: 80px 0
+    background: linear-gradient(265.97deg, #B777BE -9.18%, #88488F 103.05%), #C4C4C4
+    margin-bottom: 110px
+    // .sale__title
+    &__title
+        @include title
+        color: $white
+        max-height: 106px
+        max-width: 1170px
+        overflow: hidden
+        margin-bottom: 80px
+    // .sale__row
+    &__row
+        column-gap: 115px
+    // .sale__card
+    &__card
+        flex: 0 1 20%
+    // .sale__card-description
+    &__card-description
+        @include text
+        color: $white
+        max-height: 70px
+        max-width: 270px
+        overflow: hidden
+        text-align: center
+.selection
+    margin-bottom: 160px
+    &__title
+        max-height: 110px
+    &__img
+        position: absolute
+        bottom: -100px
+        left: -110px
+.durability2
+    margin-bottom: 160px
+//---------------------------//
+.certificates
+    margin-bottom: 180px
+    // .certificates__card-wrapper
+    &__card-wrapper
+        column-gap: 30px
+    // .certificates__card
+    &__card
+        flex: 0 1 30%
+    // .certificates__card-image
+    &__card-image
+        max-height: 385px
+        max-width: 270px
+        overflow: hidden
+        img
+            width: 100%
+    &__card-prev
+        width: 40px
+        height: 40px
+        position: absolute
+        top: 45%
+        left: 5%
+        z-index: 1
+        cursor: pointer
+    &__card-next
+        width: 40px
+        height: 40px
+        position: absolute
+        top: 45%
+        right: 5%
+        z-index: 1
+        cursor: pointer
+//------изменяем стиль точек для слайдера------//
+.slick-dots li button:before
+    font-size: 40px!important
+    color: #C6C6C6!important
+.slick-dots li.slick-active button:before
+    color: #B777BE!important
+.slick-dots
+    bottom: -50px!important
+.slick-dots li.slick-active button:before
+    opacity: 1!important
+//--------------------------------//
+.clients
+    margin-bottom: 180px
+    // .certificates__card-wrapper
+    &__card-wrapper
+        column-gap: 30px
+    // .certificates__card
+    &__card
+        flex: 0 1 30%
+    // .certificates__card-image
+    &__card-image
+        max-height: 385px
+        max-width: 270px
+        overflow: hidden
+        img
+            width: 100%
+    &__card-prev
+        width: 40px
+        height: 40px
+        position: absolute
+        top: 45%
+        left: 0%
+        z-index: 1
+        cursor: pointer
+    &__card-next
+        width: 40px
+        height: 40px
+        position: absolute
+        top: 45%
+        right: -2%
+        z-index: 1
+        cursor: pointer
+.unique
+    // .unique__card-title2
+    &__card-title2
+        max-width: 171px
+    &__card-description2
+        max-height: 75px
+    &__card-text2
+        &::before
+            content: ""
+            border-left: 2px solid #b777be
+            height: 104px
+            position: absolute
+            top: 0
+            left: 0

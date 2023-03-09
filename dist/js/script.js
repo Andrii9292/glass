@@ -1,3 +1,4 @@
+//-----------при нажатии на маленькое изображение рядом открывается большое--------------------------------//
 const thumbnails = document.querySelectorAll('.trend__thumbnails img');
 const preview = document.querySelector('.trend__preview img');
 
@@ -89,4 +90,32 @@ callClose.addEventListener('click', () => {
 overlay.addEventListener('click', () => {
     callContainer.style.display = 'none';
     overlay.style.display = 'none';
+});
+//-------------slik for certificates__card-wrapper--------------------------//
+$(document).ready(function () {
+    $('.certificates__card-wrapper').slick({
+        dots: true,
+        arrows: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true,
+        prevArrow: '<img src="../images/prev-arrow.svg" class="certificates__card-prev" alt="Previous">',
+        nextArrow: '<img src="../images/next-arrow.svg" class="certificates__card-next" alt="Next">',
+    });
+});
+//-------------slik for clients__card-wrapper--------------------------//
+$(document).ready(function () {
+    $('.clients__card-wrapper').slick({
+        dots: true,
+        arrows: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        centerMode: true,
+        variableWidth: false,
+        prevArrow: '<img src="../images/prev-arrow.svg" class="clients__card-prev" alt="Previous">',
+        nextArrow: '<img src="../images/next-arrow.svg" class="clients__card-next" alt="Next">',
+    });
 });
