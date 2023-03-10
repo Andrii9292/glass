@@ -1,0 +1,93 @@
+.ideas
+    padding-top: 30px
+    // .ideas__title
+    &__title
+        @include title
+        max-height: 106px
+        max-width: 1005px
+        overflow: hidden
+
+        margin-bottom: 80px
+    // .ideas__wrapper
+    &__wrapper
+        column-gap: 30px
+    // .ideas__photo-left
+    &__photo-left
+        column-gap: 30px
+        row-gap: 30px
+    // .ideas__link
+    &__link
+        display: block
+        font-size: 1.2rem
+        font-weight: 700
+        line-height: 1.6rem
+        letter-spacing: 0.2em
+        text-align: center
+
+        color: $black
+        border: 1px solid rgba(183, 119, 190, 0.6)
+        padding: 17px 0
+        transition: all 0.1s linear
+        &:hover
+            text-decoration: none
+            color: $white
+            background: linear-gradient(265.97deg, #B777BE -9.18%, #88488F 103.05%)
+            transition: all 0.1s linear
+        &--mb
+            margin-bottom: 60px
+    // .ideas__img
+    &__img
+        margin-bottom: 60px
+        img
+            margin-bottom: 10px
+            max-width: 100%
+    // .ideas__img-wrapper
+    &__img-wrapper
+        padding-left: 10px
+        position: relative
+        &::before
+            content: ''
+            border-left: 1px solid #B777BE
+            position: absolute
+            left: 0
+            top: 0
+            height: 50px
+    // .ideas__img-title
+    &__img-title
+        @include text
+        color: $black
+        max-height: 50px
+        max-width: 280px
+        overflow: hidden
+        margin-bottom: 15px
+    // .ideas__img-text
+    &__img-text
+        font-size: 1.2rem
+        line-height: 1.4rem
+        color: $gray
+    &__img-card
+        padding-left: 100px
+        img
+            width: 60%
+            position: relative
+            top: 50px
+            left: 40%
+//----------------------------------------//
+.ceo
+    margin-bottom: 130px
+    // .ceo__img
+    &__img
+        img
+            width: 100%
+    // .ceo__title
+    &__title
+        @include title
+        max-height: 53px
+        max-width: 480px
+        overflow: hidden
+    // .ceo__description
+    &__description
+        @include text
+        max-height: 165px
+        max-width: 860px
+        overflow: hidden
