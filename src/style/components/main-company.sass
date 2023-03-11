@@ -1,0 +1,87 @@
+.company
+    &__title
+        text-align: left
+        margin: 80px 0 50px 0
+//--------------equipment---------------------//
+.equipment
+    margin-bottom: 120px
+    // .equipment__title
+    &__title
+        @include title
+        max-height: 180px
+        max-width: 829px
+        overflow: hidden
+        margin-bottom: 80px
+    // .equipment__card-wrapper
+    &__card-wrapper
+        column-gap: 25px
+    // .equipment__card
+    &__card
+        flex: 1 1 30%
+    // .equipment__card-image
+    &__card-image
+        margin-bottom: 22px
+    // .equipment__card-text
+    &__card-text
+        @include text
+        color: $black
+        max-height: 66px
+        max-width: 232px
+        overflow: hidden
+    // .equipment__wrapper-image
+    &__wrapper-image
+        img
+            width: 100%
+//---------------quality--------------------//
+.quality
+    // .quality__title
+    &__title
+        @include title
+        max-height: 53px
+        max-width: 920px
+        overflow: hidden
+        margin: 0 auto 85px
+    // .quality__card-wrapper
+    &__card-wrapper
+        column-gap: 30px
+        row-gap: 30px
+        margin-bottom: 150px
+    // .quality__card
+    &__card
+        flex: 1 1 30%
+        align-items: center
+    // .quality__card-image
+    &__card-image
+        margin-bottom: 41px
+    // .quality__card-tile
+    &__card-tile
+        font-size: 1.6rem
+        line-height: 1.6rem
+        text-align: center
+
+        max-height: 16px
+        max-width: 171px
+        overflow: hidden
+        margin-bottom: 12px
+
+    // .quality__card-description
+    &__card-description
+        font-size: 1.2rem
+        line-height: 1.5rem
+        text-align: center
+
+        color: $gray
+
+        max-height: 15px
+        max-width: 185px
+        overflow: hidden
+.before
+    position: relative
+    &::before
+        content: ''
+        border-top: 1px solid #B777BE
+        display: block
+        width: 77px
+        position: absolute
+        top: -10px
+        left: calc( 50% - 37px )

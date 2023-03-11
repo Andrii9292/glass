@@ -241,6 +241,12 @@
 .certificates
     margin-bottom: 180px
     // .certificates__card-wrapper
+    &__title
+        @include title
+        max-height: 53px
+        max-width: 1070px
+        overflow: hidden
+        margin: 0 auto 60px
     &__card-wrapper
         column-gap: 30px
     // .certificates__card
@@ -282,6 +288,20 @@
 //--------------------------------//
 .clients
     margin-bottom: 180px
+    &__title
+        @include title
+        max-height: 106px
+        max-width: 1170px
+        overflow: hidden
+        text-align: center
+        margin-bottom: 30px
+    &__description
+        @include description
+        color: $gray
+        max-height: 32px
+        max-width: 700px
+        overflow: hidden
+        margin: 0 auto 80px
     // .certificates__card-wrapper
     &__card-wrapper
         column-gap: 30px
