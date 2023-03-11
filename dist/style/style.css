@@ -1727,11 +1727,34 @@ p, h1, h2, h3, h4, h5, h6 {
   color: #000000;
   padding: 15px;
   display: block;
+  -webkit-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 .catalog__items a:hover {
   background: #B777BE;
   color: #FFFFFF;
   text-decoration: none;
+  -webkit-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.catalog__goods-text {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  text-align: center;
+  max-height: 34px;
+  max-width: 270px;
+  overflow: hidden;
+  color: #6A6A6A;
+}
+.catalog__wrapper-top {
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 30px;
+  margin-bottom: 56px;
+  margin-top: 40px;
 }
 
 /* Slider */
