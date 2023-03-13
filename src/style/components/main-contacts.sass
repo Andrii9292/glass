@@ -1,0 +1,62 @@
+.contacts
+    // .contacts__title
+    &__title
+        @include title
+    // .contacts__wrapper
+    &__wrapper
+        position: relative
+        margin-bottom: 160px
+    // .contacts__card
+    &__card
+        flex: 1 1 30%
+        // .contacts__card--1
+        &--1
+
+        // .contacts__card--2
+        &--2
+
+        // .contacts__card--3
+        &--3
+
+    // .contacts__card-inner
+    &__card-inner
+        column-gap: 15px
+    // .contacts__card-link
+    &__card-link
+        max-width: 200px
+        max-height: 40px
+
+        font-size: 2rem
+        line-height: 3.2rem
+
+        color: #000000
+    // .contacts__card-name
+    &__card-name
+        @include description
+        padding-left: 34px
+        &--weight
+            font-weight: 700
+    // .contacts__card-image
+    &__card-image
+        position: absolute
+        top: 75%
+        left: 60%
+
+        max-height: 296px
+        max-width: 360px
+        overflow: hidden
+        img
+            width: 100%
+
+.quality
+    &__title-2
+        margin: 0 0 82px 0
+    &__card-2
+        flex: 1 1 22%
+.before2
+    &::before
+        left: 15%
+.location
+    // .location__address-title-2
+    &__address-title-2
+        max-height: 76px

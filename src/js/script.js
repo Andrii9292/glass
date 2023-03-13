@@ -119,3 +119,16 @@ $(document).ready(function () {
         nextArrow: '<img src="../images/next-arrow.svg" class="clients__card-next" alt="Next">',
     });
 });
+//-------------slik for quality__card-wrapper-2--------------------------//
+$(document).ready(function () {
+    $('.quality__card-wrapper-2').slick({
+        arrows: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        centerMode: true,
+        variableWidth: false,
+        prevArrow: '<img src="../images/prev-arrow.svg" class="clients__card-prev" alt="Previous">',
+        nextArrow: '<img src="../images/next-arrow.svg" class="clients__card-next" alt="Next">',
+    });
+});

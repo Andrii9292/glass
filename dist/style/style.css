@@ -1887,6 +1887,71 @@ p, h1, h2, h3, h4, h5, h6 {
   color: #B777BE;
 }
 
+.contacts__title {
+  font-family: Cormorant Garamond;
+  font-size: 4.8rem;
+  font-weight: 500;
+  line-height: 5.3rem;
+  letter-spacing: 0.03em;
+}
+.contacts__wrapper {
+  position: relative;
+  margin-bottom: 160px;
+}
+.contacts__card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
+}
+.contacts__card-inner {
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+}
+.contacts__card-link {
+  max-width: 200px;
+  max-height: 40px;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  color: #000000;
+}
+.contacts__card-name {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  padding-left: 34px;
+}
+.contacts__card-name--weight {
+  font-weight: 700;
+}
+.contacts__card-image {
+  position: absolute;
+  top: 75%;
+  left: 60%;
+  max-height: 296px;
+  max-width: 360px;
+  overflow: hidden;
+}
+.contacts__card-image img {
+  width: 100%;
+}
+
+.quality__title-2 {
+  margin: 0 0 82px 0;
+}
+.quality__card-2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 22%;
+          flex: 1 1 22%;
+}
+
+.before2::before {
+  left: 15%;
+}
+
+.location__address-title-2 {
+  max-height: 76px;
+}
+
 /* Slider */
 .slick-slider {
   position: relative;
