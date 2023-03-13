@@ -1,11 +1,5 @@
 .catalog
     padding-top: 40px
-    // .catalog__wrapper
-    &__wrapper
-
-    // .catalog__menu
-    &__menu
-
     // .catalog__title
     &__title
         @include title
@@ -14,8 +8,6 @@
         overflow: hidden
 
         margin-bottom: 40px
-    // .catalog__list
-    &__list
     // .catalog__items
     &__items
         margin-bottom: 15px
@@ -52,3 +44,127 @@
         row-gap: 30px
         margin-bottom: 56px
         margin-top: 40px
+    // .catalog__item-wrapper
+    &__item-wrapper
+        position: relative
+        margin-bottom: 64px
+        &::before
+            content: ''
+            display: block
+            width: 100%
+            border-top: 1px solid #C6C6C6
+            position: absolute
+            top: -24px
+            left: 0
+        &::after
+            content: ''
+            display: block
+            width: 100%
+            border-top: 1px solid #C6C6C6
+            position: absolute
+            bottom: -24px
+            left: 0
+    // .catalog__item-inner
+    &__item-inner
+        position: relative
+        &::before
+            content: ''
+            display: block
+            width: 100%
+            height: 80px
+            border-left: 2px solid #000
+            position: absolute
+            top: -17px
+            left: -14px
+    // .catalog__item-title
+    &__item-title
+        font-size: 2rem
+        line-height: 2.4rem
+        letter-spacing: 0.05em
+
+        max-height: 24px
+        max-width: 557px
+        overflow: hidden
+    // .catalog__item-escription
+    &__item-escription
+        font-size: 1.4rem
+        line-height: 1.7rem
+
+        max-height: 17px
+        max-width: 557px
+        overflow: hidden
+    // .catalog__item-link
+    &__item-link
+        display: block
+
+        font-size: 0.9rem
+        font-weight: 700
+        line-height: 1.6rem
+        letter-spacing: 0.2em
+
+        max-width: 260px
+
+        text-transform: uppercase
+        color: $black
+
+        padding: 12px 20px
+        border: 1px solid rgba(183, 119, 190, 0.6)
+        transition: all .3s linear
+        &:hover
+            background: rgba(183,119,190,.1)
+            transition: all .3s linear
+            text-decoration: none
+            color: $black
+    &__item-link2
+        max-width: 160px
+        text-align: center
+        margin: 0 auto
+        color: $gray
+
+        margin-bottom: 120px
+    // .catalog__card-wrapper
+    &__card-wrapper
+        margin-bottom: 40px
+    // .catalog__card
+    &__card
+        flex: 1 1 30%
+        display: flex
+        flex-direction: column
+        align-items: center
+    // .catalog__card-image
+    &__card-image
+        max-height: 161px
+        max-width: 156px
+        overflow: hidden
+        img
+            width: 100%
+    // .catalog__card-title
+    &__card-title
+        font-size: 1.6rem
+        line-height: 1.6rem
+
+        max-height: 16px
+        max-width: 190px
+        overflow: hidden
+
+        margin-bottom: 26px
+    // .catalog__card-oldPrice
+    &__card-oldPrice
+        max-width: 60px
+        max-height: 15px
+
+        font-size: 1.2rem
+        line-height: 1.5rem
+
+        text-decoration-line: line-through
+
+        color: #C6C6C6
+    // .catalog__card-newPrice
+    &__card-newPrice
+        max-width: 80px
+        max-height: 22px
+
+        font-size: 1.6rem
+        line-height: 140%
+
+        color: #B777BE
