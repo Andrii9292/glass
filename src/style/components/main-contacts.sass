@@ -9,27 +9,33 @@
     // .contacts__card
     &__card
         flex: 1 1 30%
-        // .contacts__card--1
-        &--1
-
-        // .contacts__card--2
-        &--2
-
-        // .contacts__card--3
-        &--3
-
     // .contacts__card-inner
     &__card-inner
         column-gap: 15px
+        img
+            transition: all 0.1s linear
+            &:hover
+                transform: scale(1.3)
+                filter: invert(1)
+                transition: all 0.1s linear
     // .contacts__card-link
     &__card-link
-        max-width: 200px
+        max-width: 205px
         max-height: 40px
 
         font-size: 2rem
         line-height: 3.2rem
 
         color: #000000
+        border: 1px solid #00000000
+        transition: all 0.1s linear
+        &:hover
+            text-decoration: none
+            background: $link
+            color: $white
+            border: 1px solid #702c78
+            transition: all 0.1s linear
+
     // .contacts__card-name
     &__card-name
         @include description
