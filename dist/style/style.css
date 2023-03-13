@@ -414,6 +414,9 @@ p, h1, h2, h3, h4, h5, h6 {
   width: 24px;
   height: 24px;
   position: relative;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .close-icon {
@@ -453,13 +456,19 @@ p, h1, h2, h3, h4, h5, h6 {
       -ms-transform: rotate(135deg);
           transform: rotate(135deg);
   top: 50%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .close-btn:hover:last-child {
-  -webkit-transform: rotate(-135deg);
-      -ms-transform: rotate(-135deg);
-          transform: rotate(-135deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
   bottom: 50%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .banner {
